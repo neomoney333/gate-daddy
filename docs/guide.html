@@ -1,0 +1,153 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Gate Daddy — Install Guide</title>
+<style>
+  @page { size: Letter; margin: 0.55in 0.6in; }
+  * { box-sizing: border-box; }
+  body { font-family: "Avenir Next", "Helvetica Neue", sans-serif; color: #10180f; font-size: 11pt; line-height: 1.5; margin: 0; }
+  .mono { font-family: Menlo, monospace; }
+  .hero { background: #020604; border: 2px solid #00ff41; border-radius: 12px; padding: 24px 28px; margin-bottom: 20px; color: #b8ffc8; position: relative; overflow: hidden; }
+  .word { font-family: Menlo, monospace; font-weight: 700; font-size: 32pt; margin: 0; color: #e6ffec; letter-spacing: 0.04em;
+          text-shadow: -2px 0 #ff2bd6, 2px 0 #00e5ff, 0 0 12px rgba(0,255,65,.5); }
+  .sub { font-family: Menlo, monospace; font-size: 9pt; color: #ff2bd6; font-weight: 700; letter-spacing: 0.06em; }
+  .quote { margin-top: 14px; font-family: Menlo, monospace; font-size: 10pt; color: #00ff41; }
+  .quote b { color: #fff; }
+  h2 { font-family: Menlo, monospace; font-size: 13pt; margin: 24px 0 8px; color: #06320f; display: flex; align-items: center; gap: 10px; break-after: avoid; }
+  h2 .n { display: inline-flex; width: 26px; height: 26px; border-radius: 4px; background: #00c236; color: #000; font-size: 11pt; align-items: center; justify-content: center; font-weight: 700; flex: none; }
+  h3 { font-size: 11.5pt; margin: 14px 0 4px; color: #06320f; }
+  ol, ul { margin: 6px 0; padding-left: 22px; }
+  li { margin: 3px 0; }
+  .box { border-radius: 8px; padding: 11px 15px; margin: 12px 0; break-inside: avoid; }
+  .warn { background: #fff4ec; border: 1px solid #ffd2b3; }
+  .tip { background: #effff2; border: 1px solid #b6f0c3; }
+  .doc { background: #fdf0fb; border: 1px solid #f5c2ec; font-family: Menlo, monospace; font-size: 9.5pt; }
+  .box b.t { display: block; margin-bottom: 4px; }
+  code, .k { font-family: Menlo, monospace; font-size: 9.5pt; background: #eef3ee; padding: 1px 5px; border-radius: 4px; }
+  .ui { font-weight: 600; color: #0a5a1f; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 10pt; break-inside: avoid; }
+  th { text-align: left; background: #eaf5ec; color: #06320f; padding: 7px 10px; font-family: Menlo, monospace; font-size: 9pt; }
+  td { padding: 7px 10px; border-bottom: 1px solid #e6efe7; vertical-align: top; }
+  img.shot { width: 100%; border-radius: 8px; margin: 10px 0 4px; border: 1px solid #0b3d1a; }
+  .cap { font-size: 9pt; color: #777; text-align: center; }
+  .page { break-before: page; }
+  .foot { margin-top: 26px; font-size: 9pt; color: #888; border-top: 1px solid #eee; padding-top: 8px; font-family: Menlo, monospace; }
+</style></head>
+<body>
+
+<div class="hero">
+  <div class="word">GATE DADDY</div>
+  <div class="sub">TOUGH LOVE RHYTHM THERAPY // EST. 1986 // v1.0.0</div>
+  <div class="quote">&gt; DR. GATE SAYS: <b>"THIS MIX IS CRYING OUT FOR BOUNDARIES."</b></div>
+  <p style="margin:12px 0 0;color:#d4f5dc">Trance gate, drawable volume shaper, sidechain ducking, transient shaper, low-end duck, two LFOs and a filter, all in one plugin. This guide gets it into Ableton in about 5 minutes.</p>
+</div>
+
+<h3>What you received</h3>
+<table>
+  <tr><th style="width:42%">FILE</th><th>WHAT IT IS</th></tr>
+  <tr><td><b>Install Gate Daddy 1.0.0.pkg</b></td><td>The installer. Puts the VST3, the Audio Unit and a standalone app on your Mac.</td></tr>
+  <tr><td><b>Gate Daddy – Install Guide.pdf</b></td><td>This guide.</td></tr>
+</table>
+
+<h3>Requirements</h3>
+<ul>
+  <li>macOS 11 (Big Sur) or newer. Works on Apple Silicon (M1–M4) and Intel Macs.</li>
+  <li>Ableton Live 10.1 or newer (or any DAW that loads VST3 or Audio Units). Sidechain needs Live 11 or newer.</li>
+</ul>
+
+<h2><span class="n">1</span> Download and unzip</h2>
+<ul>
+  <li><b>From email:</b> click the attachment <span class="ui">Gate Daddy.zip</span> → <span class="ui">Download</span>.</li>
+  <li><b>From Google Drive:</b> right-click the file → <span class="ui">Download</span>.</li>
+</ul>
+<p>Open your <span class="ui">Downloads</span> folder and <b>double-click the .zip</b>. A folder appears containing the installer and this guide.</p>
+
+<h2><span class="n">2</span> Quit Ableton Live</h2>
+<p>Save and quit Live completely (<span class="k">⌘Q</span>). Plugins can't be installed while Live has them loaded.</p>
+
+<h2><span class="n">3</span> Open the installer (macOS security step)</h2>
+<p>Double-click <b>Install Gate Daddy 1.0.0.pkg</b>. Because this is an independent plugin (not from the App Store), macOS will most likely stop it the first time:</p>
+<div class="box warn"><b class="t">“Apple could not verify ‘Install Gate Daddy 1.0.0.pkg’ is free of malware…”</b>
+Normal for independent audio plugins. <b>Click <span class="ui">Done</span></b>. Do <u>not</u> click “Move to Trash”.</div>
+<h3>macOS 15 Sequoia and newer (and most macOS 13–14 setups)</h3>
+<ol>
+  <li>Open <span class="ui"> Apple menu → System Settings</span> → <span class="ui">Privacy &amp; Security</span>.</li>
+  <li>Scroll down to <span class="ui">Security</span>. You'll see <i>“Install Gate Daddy 1.0.0.pkg was blocked…”</i></li>
+  <li>Click <span class="ui">Open Anyway</span>, enter your Mac password, then click <span class="ui">Open Anyway</span> again.</li>
+</ol>
+<h3>macOS 14 Sonoma and older (shortcut)</h3>
+<p><b>Control-click</b> (or right-click) the .pkg → <span class="ui">Open</span> → <span class="ui">Open</span>.</p>
+
+<h2><span class="n">4</span> Run the installer</h2>
+<ol>
+  <li>Click <span class="ui">Continue</span> → <span class="ui">Install</span>, and enter your Mac password.</li>
+  <li>When it says <span class="ui">The installation was successful</span>, click <span class="ui">Close</span>.</li>
+</ol>
+
+<h2><span class="n">5</span> Turn on plugins in Ableton and rescan</h2>
+<ol>
+  <li>Open Live → <span class="ui">Live menu → Settings</span> (<i>Preferences</i> in Live 11 and older) → <span class="ui">Plug-Ins</span> tab.</li>
+  <li>Turn <b>ON</b> <span class="ui">Use VST3 Plug-In System Folders</span> and <span class="ui">Use Audio Units v2</span> (<i>“Use Audio Units”</i> in Live 11).</li>
+  <li>Hold <b>Option (⌥)</b> and click <span class="ui">Rescan</span>.</li>
+</ol>
+
+<div class="page"></div>
+<h2><span class="n">6</span> Load it</h2>
+<ol>
+  <li>In Live's browser: <span class="ui">Plug-Ins</span> → <span class="ui">Gate Daddy Labs</span> → drag <b>Gate Daddy</b> onto a bass, pad, synth or vocal track. VST3 and AU both work; pick one.</li>
+  <li>Click the wrench/window icon on the device to open Dr. Gate's clinic.</li>
+</ol>
+<img class="shot" src="screenshot.png">
+<div class="cap">Gate Daddy: presets and REALITY CHECK up top, the volume shaper and trance gate in the middle, Mood Swing LFOs and sidechain on the right.</div>
+
+<h2><span class="n">7</span> Set up the sidechain (kick ducking)</h2>
+<ol>
+  <li>On the Gate Daddy device in Ableton, click the small <b>triangle ▸</b> in the device's title bar to show the <span class="ui">Sidechain</span> section.</li>
+  <li>Switch <span class="ui">Sidechain</span> on, and in <span class="ui">Audio From</span> choose your <b>kick track</b>.</li>
+  <li>In Gate Daddy's <b>SIDECHAIN</b> panel, click <span class="ui">ON</span> and set source to <span class="ui">EXTERNAL</span>. It should say <i>“SIDECHAIN CONNECTED. SOMEONE CARES.”</i></li>
+  <li>Set <b>THRESH</b> so the red level bar crosses the white line on each kick, then dial in <b>AMOUNT</b> and <b>RELEASE</b> (longer = more pump).</li>
+</ol>
+<div class="box tip"><b class="t">Pro move: kick-triggered pump</b>In the <b>VOLUME SHAPER</b>, set the mode to <span class="ui">SC TRIG</span>. Your drawn curve now restarts on every kick, even off-grid ones. Turn on <span class="ui">HOLD END</span> to play it once per hit.</div>
+
+<h2><span class="n">8</span> Quick tour</h2>
+<table>
+  <tr><th style="width:26%">MODULE</th><th>WHAT IT DOES</th></tr>
+  <tr><td><b>TRANCE GATE</b></td><td>16-step gate. Pick the rate (1/4 down to 1/64, including triplets and dotted). Click steps on/off, <b>Alt-drag</b> to set step volume. Buttons: 4 FLOOR, TRANCE, OFFBEAT, GALLOP, CHOP, ALL ON, CHAOS. Knobs: steps, length, swing, attack, release, mix.</td></tr>
+  <tr><td><b>VOLUME SHAPER</b></td><td>Draw a volume curve. <b>Click</b> to add a point, <b>drag</b> to move it, <b>double-click</b> to delete it, and drag the <b>pink diamonds</b> to bend the curve. <b>Right-click</b> for invert/reverse/double. Modes: SYNC, FREE HZ, INPUT TRIG, SC TRIG. BAND lets you shape only the lows or only the highs.</td></tr>
+  <tr><td><b>TRANSIENTS</b></td><td>Punch up or soften the front of each hit (Attack) and the tail (Sustain). Runs first in the chain.</td></tr>
+  <tr><td><b>LOW-END DUCK</b></td><td>Ducks only the bass below FREQ, following the curve or the sidechain. Fixes kick/bass fights.</td></tr>
+  <tr><td><b>MOOD SWING 1 &amp; 2</b></td><td>LFOs that modulate cutoff, resonance, pan, volume, drive or width. Sync to tempo or run free.</td></tr>
+  <tr><td><b>FILTER / THE VERDICT</b></td><td>Low/high/band-pass filter, drive, stereo width, dry/wet mix, output, and the <b>PAIN</b> meter (how hard it's turning you down).</td></tr>
+  <tr><td><b>REALITY CHECK</b></td><td>Randomizes the curve, the gate pattern and the rates. Press until it slaps.</td></tr>
+  <tr><td><b>DENIAL MODE</b></td><td>Bypass. For before/after comparisons (or denial).</td></tr>
+</table>
+<p>Hover over any knob for a tooltip. Click Dr. Gate for a fresh diagnosis.</p>
+
+<h3>Presets to try first</h3>
+<ul>
+  <li><b>GET REAL PUMP</b>: classic 1/4 sidechain-style pump, no routing needed.</li>
+  <li><b>HERE'S THE DEAL (1/16 GATE)</b>: trance gate on pads and chords.</li>
+  <li><b>LOWS-ONLY ACCOUNTABILITY</b>: pumps only the bass, leaves the highs alone.</li>
+  <li><b>THE MOUSTACHE WOBBLE</b>: LFO filter wobble for basses.</li>
+  <li><b>SIDECHAIN INTERVENTION</b>: real kick ducking (needs step 7).</li>
+</ul>
+
+<h2><span class="n">9</span> Updates</h2>
+<p>Gate Daddy checks for new versions when you open it. When one is out, an orange <span class="ui">UPDATE vX.X.X</span> button appears next to the logo and Dr. Gate lets you know. Click it, run the new installer the same way, and restart Ableton.</p>
+
+<h2><span class="n">?</span> Troubleshooting</h2>
+<table>
+  <tr><th style="width:36%">PROBLEM</th><th>FIX</th></tr>
+  <tr><td>It doesn't show up in Ableton</td><td>Check step 5: both switches on, then hold <b>Option</b> and click <b>Rescan</b>. Restart Live if needed.</td></tr>
+  <tr><td>Installer says it can't be opened</td><td>Follow step 3: System Settings → Privacy &amp; Security → <b>Open Anyway</b>.</td></tr>
+  <tr><td>“SC: NOT ROUTED”</td><td>Redo step 7. Pick the kick track in <b>Audio From</b> on the Ableton device, not inside the plugin window.</td></tr>
+  <tr><td>Gate/shaper not moving</td><td>Make sure the module's <b>ON</b> button is lit and <b>DENIAL MODE</b> is off. It follows Live's tempo automatically.</td></tr>
+  <tr><td>No sound in the standalone app</td><td><b>Options → Audio/MIDI Settings</b>, pick your audio interface, click <b>Unmute</b> on the input (use headphones). Set the tempo with the BPM bar at the top.</td></tr>
+  <tr><td>Uninstall</td><td>Delete:<br>
+    <code>/Library/Audio/Plug-Ins/VST3/Gate Daddy.vst3</code><br>
+    <code>/Library/Audio/Plug-Ins/Components/Gate Daddy.component</code><br>
+    <code>/Applications/Gate Daddy.app</code></td></tr>
+</table>
+
+<div class="box doc">&gt; DR. GATE: "YOU INSTALLED A PLUGIN. THAT'S THE FIRST STEP. NOW GO FINISH A TRACK."</div>
+
+<div class="foot">Gate Daddy v1.0.0 · Gate Daddy Labs · github.com/neomoney333/gate-daddy</div>
+</body></html>

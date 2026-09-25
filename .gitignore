@@ -4,3 +4,4 @@ JUCE/
 *.xcodeproj
 .vscode/
 .idea/
+dist/

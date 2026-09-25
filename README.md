@@ -12,7 +12,7 @@ AU · VST3 · Standalone. Built with [JUCE](https://juce.com).
 
 Grab the latest build from **[Releases](https://github.com/neomoney333/gate-daddy/releases/latest)**.
 
-**Mac:** download `GateDaddy-x.y.z-mac.pkg` and run it. It installs the AU, the VST3 and the standalone app.
+**Mac:** download `Install.Gate.Daddy.x.y.z.pkg` and run it. It installs the AU, the VST3 and the standalone app.
 The installer isn't signed yet, so macOS will block it the first time: open **System Settings → Privacy & Security**, scroll down, and click **Open Anyway**.
 
 **Windows:** unzip `GateDaddy-x.y.z-windows.zip` and copy `Gate Daddy.vst3` into `C:\Program Files\Common Files\VST3`.
