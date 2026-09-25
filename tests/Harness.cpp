@@ -1,6 +1,7 @@
 #include "../Source/PluginProcessor.h"
 #include "../Source/PluginEditor.h"
 #include "../Source/Presets.h"
+#include "../Source/UpdateChecker.h"
 #include <juce_gui_basics/juce_gui_basics.h>
 #include <iostream>
 
@@ -125,6 +126,10 @@ int main()
     juce::MemoryBlock mb; p.getStateInformation (mb);
     GateDaddyProcessor p2; p2.setStateInformation (mb.getData(), (int) mb.getSize());
     check (gd::curveToString (p2.getCurve()) == gd::curveToString (p.getCurve()) && p2.apvts.getRawParameterValue ("drive")->load() == 50.0f, "Save/restore state (curve + params)");
+
+    // 11. Update version comparison
+    check (gd::isNewerVersion ("v1.0.1", "1.0.0") && gd::isNewerVersion ("1.10.0", "1.9.9") && gd::isNewerVersion ("2.0", "1.9.9")
+           && ! gd::isNewerVersion ("v1.0.0", "1.0.0") && ! gd::isNewerVersion ("0.9.9", "1.0.0"), "Update checker version comparison");
 
     // UI snapshot
     {
